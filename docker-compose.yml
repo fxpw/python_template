@@ -1,0 +1,10 @@
+services:
+  python_template:
+    restart: unless-stopped
+    build:
+      context: "./docker"
+      dockerfile: Dockerfile
+    container_name: python_template
+    volumes:
+      - './src:/app'
+      - './.env:/app/.env'

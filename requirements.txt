@@ -1,0 +1,5 @@
+ruff
+asyncio
+python-dateutil
+python-dotenv
+debugpy

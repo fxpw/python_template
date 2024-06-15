@@ -1,0 +1,53 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Отладчик Python: Удаленное подключение",
+			"type": "debugpy",
+			"request": "attach",
+			"connect": {
+				"host": "localhost",
+				"port": 5678
+			},
+			"pathMappings": [
+				{
+					"localRoot": "${workspaceFolder}",
+					"remoteRoot": "/app"
+				}
+			]
+		},
+		{
+			"name": "Run main file",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/main.py",
+			"justMyCode": true,
+		},
+		{
+			"name": "Django: Run Server",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/mysite/manage.py",
+			"args": [
+				"runserver",
+				"--noreload"
+			],
+			"django": true
+		}
+		// {
+		// 	"name": "Docker: Python - General",
+		// 	"type": "docker",
+		// 	"request": "launch",
+		// 	"preLaunchTask": "docker-run: debug",
+		// 	"python": {
+		// 		"pathMappings": [
+		// 		{
+		// 			"localRoot": "${workspaceFolder}",
+		// 			"remoteRoot": "/app"
+		// 		}
+		// 		],
+		// 	"projectType": "general"
+		// 	}
+		// },
+	]
+}

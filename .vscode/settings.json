@@ -1,0 +1,38 @@
+{
+	"files.exclude": {
+		"**/__pycache__": true,
+		"**/*.pyc": true,
+		"**/*.pyo": true,
+		".idea": true,
+		// "alembic": true,
+	},
+	"todo-tree.tree.showCountsInTree": true,
+	"ruff.format.args": [
+		"--config=.vscode/.ruff.toml"
+	],
+	"python.analysis.typeCheckingMode": "off",
+	"ruff.lint.run": "onType",
+	"ruff.showNotifications": "onError",
+	"material-icon-theme.languages.associations": {
+		"jinja-html": "html"
+	},
+	"files.associations": {
+		"*.html": "jinja-html"
+	},
+	"emmet.includeLanguages": {
+		"jinja-html": "html"
+	},
+	"python.analysis.autoImportCompletions": true,
+	"sqltools.connections": [
+		{
+			"previewLimit": 50,
+			"server": "localhost",
+			"port": 5432,
+			"driver": "PostgreSQL",
+			"name": "localhost",
+			"username": "username",
+			"password": "password",
+			"database": "mydatabase"
+		}
+	],
+}

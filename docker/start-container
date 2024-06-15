@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+usermod -u 1000 www-data
+
+python -m pip install -r requirements.txt && python main.py
+#exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+
+
